@@ -10,11 +10,6 @@ app.get('/', (req, res) => {
 
 });
 
-app.get('/api/:name', (req, res) => {
-
-    res.send(req.params.name)
-
-}); 
 
 app.listen(port, () => {
     console.log(`Server is running on http://${database.host}:${database.port}`);
